@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+  <title>Smart GSM</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-primary text-white flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.php">Smart GSM</a>
+    <?= $_SESSION['user-name'] ?>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="logout.php">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.php">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">
+                <span data-feather="users"></span>
+                Customers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.view.php">
+                <span data-feather="user-plus"></span>
+                New Customer
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.php">
+                <span data-feather="users"></span>
+                Users
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.view.php">
+                <span data-feather="product"></span>
+                Products
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sales.view.php">
+                <span data-feather="product"></span>
+              Sales
+              </a>
+            </li>
+
+
+          </ul>
+
+
+
+        </div>
+      </nav>
